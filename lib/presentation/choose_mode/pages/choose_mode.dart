@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:sputify/common/widgets/button/basic_button_app.dart';
 import 'package:sputify/core/config/assets/app_vectors.dart';
+import 'package:sputify/presentation/auth/pages/signup_or_signin.dart';
 import 'package:sputify/presentation/choose_mode/bloc/theme_cubit.dart';
 import '../../../core/config/assets/app_images.dart';
 import '../../../core/config/theme/app_colors.dart';
@@ -147,7 +148,7 @@ class ChooseModePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) =>
-                            const ChooseModePage(),
+                            const SignupOrSigninPage(),
                       ),
                     );
                   },

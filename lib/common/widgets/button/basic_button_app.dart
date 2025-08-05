@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sputify/core/config/theme/app_colors.dart';
 
 class BasicAppButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -16,7 +17,9 @@ class BasicAppButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        minimumSize: Size.fromHeight(height ?? 80)
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+        minimumSize: Size.fromHeight(height ?? 80),
       ),
       child: Text(
         title
