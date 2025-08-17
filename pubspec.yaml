@@ -15,6 +15,13 @@ dependencies:
   flutter_bloc: ^9.1.1
   hydrated_bloc: ^10.1.1
   path_provider: ^2.1.5
+  firebase_core:
+  firebase_auth:
+  get_it:
+  dartz:
+  cloud_firestore:
+  just_audio: ^0.9.35
+  shared_preferences: ^2.2.1
 
 
 dev_dependencies:
@@ -27,7 +34,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
-    - assets/vectors/sputify_logo.svg
+    - assets/vectors/
   fonts:
     - family: Satoshi
       fonts:

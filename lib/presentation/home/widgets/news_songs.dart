@@ -42,12 +42,14 @@ class NewsSongs extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(
-                      builder: (BuildContext context)
-                  => SongPlayerPage(
-                    songEntity: songs[index],
-                  ))
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => SongPlayerPage(
+                    playlist: songs,
+                    startIndex: index,
+                  ),
+                ),
               );
             },
             child: SizedBox(
