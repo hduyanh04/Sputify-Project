@@ -1,27 +1,22 @@
-# https://dart.dev/guides/libraries/private-files
-# Created by `dart pub`
-.dart_tool/
 # Flutter/Dart
-.packages
-.pub/
 build/
-pubspec.lock
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.idea/
+*.iml
 
 # Android
-**/gradle-wrapper.jar
-**/local.properties
-**/google-services.json
-**/app/google-services.json
-**/cxx/
-**/generated/
-**/.idea/
-**/*.iml
+*.apk
+*.aab
+*.keystore
+local.properties
 
 # iOS
 Pods/
-Runner.xcworkspace/
-*.xcuserstate
+DerivedData/
+*.xcworkspace
 
-# Misc
-*.log
-*.tmp
+# Firebase / API Keys
+android/app/google-services.json
