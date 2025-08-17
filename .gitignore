@@ -1,3 +1,27 @@
 # https://dart.dev/guides/libraries/private-files
 # Created by `dart pub`
 .dart_tool/
+# Flutter/Dart
+.packages
+.pub/
+build/
+pubspec.lock
+
+# Android
+**/gradle-wrapper.jar
+**/local.properties
+**/google-services.json
+**/app/google-services.json
+**/cxx/
+**/generated/
+**/.idea/
+**/*.iml
+
+# iOS
+Pods/
+Runner.xcworkspace/
+*.xcuserstate
+
+# Misc
+*.log
+*.tmp
